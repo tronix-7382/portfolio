@@ -45,7 +45,7 @@ const Projects = () => {
             justifyContent: "center",
           }}
         >
-          {reverseData.map(data => <ProjectCard {...data.card} />)}
+          {reverseData.map(data => <ProjectCard {...data.card} button={true} />)}
         </Box>
       </Box>
     </>

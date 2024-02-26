@@ -5,7 +5,7 @@ import ChevronRightOutlinedIcon from "@mui/icons-material/ChevronRightOutlined";
 import EastOutlinedIcon from "@mui/icons-material/EastOutlined";
 import { ClipLoader } from "react-spinners";
 
-function ProjectCard({ title, caption, year, url ,fw }) {
+function ProjectCard({ title, caption, year, url, fw, button, hoverUrl }) {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -25,10 +25,11 @@ function ProjectCard({ title, caption, year, url ,fw }) {
         sx={{
           border: "1px solid rgba(0,160,250,0.1)",
           backgroundColor: "primary.dark",
-          padding: !fw ? ".5rem" : '.1rem',
-          maxWidth: { xs: "350px", md:'390px', xl: "510px" },
+          padding: !fw ? ".5rem" : ".2rem",
+          maxWidth: { xs: "350px", md: "390px", xl: "510px" },
           transition: "all .5s",
           position: "relative",
+          width: "100%",
 
           "&:hover": {
             border: "1px solid rgba(0,160,250,0.3)",
@@ -45,6 +46,9 @@ function ProjectCard({ title, caption, year, url ,fw }) {
             "&  .yearParent": {
               opacity: 1,
             },
+            "&  .hoverUrl": {
+              md: { opacity: 1, visibility: "visible" },
+            },
           },
         }}
       >
@@ -52,13 +56,15 @@ function ProjectCard({ title, caption, year, url ,fw }) {
           sx={{
             width: "100%",
             height: "270px",
-            overflow:'hidden',
-            minWidth:{xs:'unset', md:'320px'},
-            display:"flex",
-            alignItems:'center',
-            justifyContent:'center',
+            overflow: "hidden",
+            minWidth: { xs: "280px", md: "320px" },
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
           }}
         >
+          {/* Image */}
+
           {loading ? (
             <ClipLoader color="#36d7b7" />
           ) : (
@@ -66,8 +72,8 @@ function ProjectCard({ title, caption, year, url ,fw }) {
               src={url}
               alt={title}
               style={{
-                width:'100%',
-                height:'100%',
+                width: "100%",
+                height: "100%",
                 objectFit: "cover",
                 border: "1px solid rgba(0,70,250,.1)",
                 opacity: "0.8",
@@ -75,7 +81,6 @@ function ProjectCard({ title, caption, year, url ,fw }) {
             />
           )}
         </Box>
-        {/* Image */}
 
         {/* Content */}
         <Box
@@ -93,6 +98,7 @@ function ProjectCard({ title, caption, year, url ,fw }) {
               sx={{
                 transition: "all .5s",
                 color: "rgba(255,255,255,.8)",
+                fontSize: { xs: "1rem", md: "1.2rem" },
               }}
               className="title"
             >
@@ -102,6 +108,7 @@ function ProjectCard({ title, caption, year, url ,fw }) {
               variant="caption"
               sx={{
                 color: "rgba(255,255,255,.3)",
+                fontSize: { xs: ".6rem", md: ".8rem" },
               }}
             >
               {caption}
@@ -109,32 +116,34 @@ function ProjectCard({ title, caption, year, url ,fw }) {
           </Box>
 
           {/* Button */}
-          <Box
-            sx={{
-              border: "1px solid rgba(0,170,250,0.1)",
-              backgroundColor: "primary.dark",
-              overflow: "hidden",
-              width: "25px",
-              height: "25px",
-              position: "relative",
-            }}
-          >
+          {button && (
             <Box
               sx={{
-                position: "absolute",
-                top: 0,
-                display: "flex",
-                alignItems: "center",
-                transition: "all .5s",
-                color: "rgba(255,255,255,.4)",
-                flexDirection: "column",
+                border: "1px solid rgba(0,170,250,0.1)",
+                backgroundColor: "primary.dark",
+                overflow: "hidden",
+                width: "25px",
+                height: "25px",
+                position: "relative",
               }}
-              className="button"
             >
-              <ChevronRightOutlinedIcon />
-              <EastOutlinedIcon fontSize="small" />
+              <Box
+                sx={{
+                  position: "absolute",
+                  top: 0,
+                  display: "flex",
+                  alignItems: "center",
+                  transition: "all .5s",
+                  color: "rgba(255,255,255,.4)",
+                  flexDirection: "column",
+                }}
+                className="button"
+              >
+                <ChevronRightOutlinedIcon />
+                <EastOutlinedIcon fontSize="small" />
+              </Box>
             </Box>
-          </Box>
+          )}
         </Box>
 
         {/* Year */}
@@ -178,6 +187,33 @@ function ProjectCard({ title, caption, year, url ,fw }) {
             </Typography>
           </Box>
         </Box>
+
+        {hoverUrl && (
+          <Box
+            sx={{
+              position: "absolute",
+              inset: 0,
+              backgroundColor: "rgba(0,0,0,0.6)",
+              opacity: "0",
+              visibility: "hidden",
+              transition: "all .5s",
+              height: "275px",
+            }}
+            className="hoverUrl"
+          >
+            <img
+              src={hoverUrl}
+              alt={title}
+              style={{
+                width: "100%",
+                height: "100%",
+                objectFit: "cover",
+                border: "1px solid rgba(0,70,250,.1)",
+                opacity: "1",
+              }}
+            />
+          </Box>
+        )}
       </Box>
     </>
   );
