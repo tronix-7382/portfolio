@@ -1,5 +1,5 @@
 import { Box, Typography } from "@mui/material";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 import ChevronRightOutlinedIcon from "@mui/icons-material/ChevronRightOutlined";
 import EastOutlinedIcon from "@mui/icons-material/EastOutlined";
@@ -7,6 +7,8 @@ import { ClipLoader } from "react-spinners";
 
 function ProjectCard({ title, caption, year, url, fw, button, hoverUrl }) {
   const [loading, setLoading] = useState(true);
+  const [hover, setHover] = useState(hoverUrl);
+  const hoveredimage = useRef();
 
   useEffect(() => {
     const image = new Image();
@@ -50,6 +52,15 @@ function ProjectCard({ title, caption, year, url, fw, button, hoverUrl }) {
               md: { opacity: 1, visibility: "visible" },
             },
           },
+        }}
+        onClick={(e) => {
+          hoveredimage.current.style.opacity = 1;
+          hoveredimage.current.style.visibility = "visible";
+
+          setTimeout(() => {
+            hoveredimage.current.style.opacity = 0;
+          hoveredimage.current.style.visibility = "hidden";
+          }, 2000);
         }}
       >
         <Box
@@ -188,7 +199,7 @@ function ProjectCard({ title, caption, year, url, fw, button, hoverUrl }) {
           </Box>
         </Box>
 
-        {hoverUrl && (
+        {hover && (
           <Box
             sx={{
               position: "absolute",
@@ -200,14 +211,15 @@ function ProjectCard({ title, caption, year, url, fw, button, hoverUrl }) {
               height: "275px",
             }}
             className="hoverUrl"
+            ref={hoveredimage}
           >
             <img
-              src={hoverUrl}
+              src={hover}
               alt={title}
               style={{
                 width: "100%",
                 height: "100%",
-                objectFit: "cover",
+                objectFit: "contain",
                 border: "1px solid rgba(0,70,250,.1)",
                 opacity: "1",
               }}
