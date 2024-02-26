@@ -7,10 +7,9 @@ import Projects from "../pages/Projects";
 
 
 const routes = () => [
-    {path:'/', element: <Home/>},
-    {path:'/home', element: <Home/>},
+    {path:'/', element: <About/>},
+    {path:'/home', element: <About/>},
     {path:'/projects', element: <Projects/>},
-    {path:'/about', element: <About/>},
     {path:'/gallery', element: <Gallery/>},
     {path:'/contact', element: <Contact/>},
     {path:'/blog', element: <Blog/>},

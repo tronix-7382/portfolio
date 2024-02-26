@@ -6,9 +6,8 @@ import AlternateEmailOutlinedIcon from '@mui/icons-material/AlternateEmailOutlin
 import Inventory2OutlinedIcon from '@mui/icons-material/Inventory2Outlined';
 
 const sidebarData = [
-  { id: 1, title: "home", icon: <HomeOutlinedIcon /> },
+  { id: 3, title: "home", icon: <FingerprintOutlinedIcon /> }, 
   { id: 2, title: "projects", icon: <AccountTreeOutlinedIcon /> }, 
-  { id: 3, title: "about", icon: <FingerprintOutlinedIcon /> }, 
   { id: 4, title: "gallery", icon: <CameraAltOutlinedIcon /> }, 
   { id: 5, title: "contact", icon: <AlternateEmailOutlinedIcon /> }, 
   { id: 6, title: "blog", icon: <Inventory2OutlinedIcon /> }, 
