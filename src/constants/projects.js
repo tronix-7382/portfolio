@@ -13,7 +13,17 @@ export const projectsData = [
       year: "2023",
       url: reactBootstrap,
     },
-    content: {},
+    content: {
+      title: "React-Bootstrap",
+      caption: "Frist React-Bootsrap Project",
+      desc: "My first bootstrap project in reactjs, we need to learn react-bootstrap in reactjs...",
+      client: "Self-Tuaght",
+      date: "December 15, 2023",
+      service: "FrontEnd Development",
+      industry: "No industry",
+      problem: "I cant use bootstrap",
+      solution: "We need to use reactBootstrap insted bootstrap because reactjs has no dependency on either bootstrap.js or jQuery. in jQuery we change directly the Dom but it's against the rules of reactjs.  "
+    },
   },
   {
     id: "2",
@@ -23,7 +33,17 @@ export const projectsData = [
       year: "2023",
       url: sabzlearn,
     },
-    content: {},
+    content: {
+        title: "Sabzlearn",
+        caption: "First React Project",
+        desc: "my first ReactJs project, The UI Design is from Sabzlearn.com",
+        client: "self-tuaght",
+        date: "December 15, 2023",
+        service: "FrontEnd Development",
+        industry: "No industry",
+        problem: "I cant use bootstrap",
+        solution: "We need to use reactBootstrap insted bootstrap because reactjs has no dependency on either bootstrap.js or jQuery. in jQuery we change directly the Dom but it's against the rules of reactjs.  "
+      },
   },
   {
     id: "3",
@@ -33,7 +53,17 @@ export const projectsData = [
       year: "2024",
       url: dashboard,
     },
-    content: {},
+    content: {
+        title: "React-Bootstrap",
+        caption: "Frist React-Bootsrap Project",
+        desc: "my first bootstrap project in reactjs",
+        client: "self-tuaght",
+        date: "December 15, 2023",
+        service: "FrontEnd Development",
+        industry: "No industry",
+        problem: "I cant use bootstrap",
+        solution: "We need to use reactBootstrap insted bootstrap because reactjs has no dependency on either bootstrap.js or jQuery. in jQuery we change directly the Dom but it's against the rules of reactjs.  "
+      },
   },
   {
     id: "4",
@@ -43,7 +73,17 @@ export const projectsData = [
       year: "2024",
       url: monster,
     },
-    content: {},
+    content: {
+        title: "React-Bootstrap",
+        caption: "Frist React-Bootsrap Project",
+        desc: "my first bootstrap project in reactjs",
+        client: "self-tuaght",
+        date: "December 15, 2023",
+        service: "FrontEnd Development",
+        industry: "No industry",
+        problem: "I cant use bootstrap",
+        solution: "We need to use reactBootstrap insted bootstrap because reactjs has no dependency on either bootstrap.js or jQuery. in jQuery we change directly the Dom but it's against the rules of reactjs.  "
+      },
   },
   {
     id: "5",
@@ -53,6 +93,16 @@ export const projectsData = [
       year: "2024",
       url: portfolio,
     },
-    content: {},
+    content: {
+        title: "React-Bootstrap",
+        caption: "Frist React-Bootsrap Project",
+        desc: "my first bootstrap project in reactjs",
+        client: "self-tuaght",
+        date: "December 15, 2023",
+        service: "FrontEnd Development",
+        industry: "No industry",
+        problem: "I cant use bootstrap",
+        solution: "We need to use reactBootstrap insted bootstrap because reactjs has no dependency on either bootstrap.js or jQuery. in jQuery we change directly the Dom but it's against the rules of reactjs.  "
+      },
   },
 ];
