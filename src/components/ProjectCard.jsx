@@ -5,7 +5,7 @@ import ChevronRightOutlinedIcon from "@mui/icons-material/ChevronRightOutlined";
 import EastOutlinedIcon from "@mui/icons-material/EastOutlined";
 import { ClipLoader } from "react-spinners";
 
-function ProjectCard({ title, caption, year, url }) {
+function ProjectCard({ title, caption, year, url ,fw }) {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -25,8 +25,8 @@ function ProjectCard({ title, caption, year, url }) {
         sx={{
           border: "1px solid rgba(0,160,250,0.1)",
           backgroundColor: "primary.dark",
-          padding: ".5rem",
-          maxWidth: { xs: "350px", xl: "510px" },
+          padding: !fw ? ".5rem" : '.1rem',
+          maxWidth: { xs: "350px", md:'390px', xl: "510px" },
           transition: "all .5s",
           position: "relative",
 

@@ -1,8 +1,9 @@
 import { Box } from "@mui/material";
 import React, { useEffect, useState } from "react";
 import Title from "../components/Title";
-import ProjectCard from "../components/Projects/ProjectCard";
+import ProjectCard from "../components/ProjectCard";
 import { projectsData } from "../constants/projects";
+
 const Projects = () => {
   const [reverseData, setReverseData] = useState([]);
 

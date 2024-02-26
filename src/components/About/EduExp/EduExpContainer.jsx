@@ -2,6 +2,7 @@ import React from "react";
 import Title from "../../Title";
 import { Box, Typography } from "@mui/material";
 import { educationData, experienceData } from "../../../constants/EduExpData";
+import InfoCard from "./InfoCard";
 
 function EduExpContainer({ title, data }) {
   return (
@@ -51,53 +52,3 @@ function EduExpContainer({ title, data }) {
 
 export default EduExpContainer;
 
-function InfoCard({data}) {
-  return (
-    <>
-      <Box
-        sx={{
-          display: "flex",
-          alignItems: "center",
-          gap: ".8rem",
-          m: "1.5rem 2rem",
-          "& img": {
-            width: "60px",
-          },
-          "&::after": {
-            content: "''",
-            width: "8px",
-            left: "7px",
-            height: "8px",
-            marginBottom: "40px",
-            backgroundColor: "rgb(150,150,150)",
-            position: "absolute",
-          },
-        }}
-      >
-        <img
-          src={data.img}
-          alt={data.title}
-        />
-        <Box>
-          <Typography
-            sx={{
-              color: "rgba(255,255,255,0.25)",
-              fontSize: ".8rem",
-            }}
-          >
-            {data.time}
-          </Typography>
-          <Typography sx={{}}>{data.title}</Typography>
-          <Typography
-            sx={{
-              color: "rgba(255,255,255,0.25)",
-              fontSize: ".8rem",
-            }}
-          >
-            {data.caption}
-          </Typography>
-        </Box>
-      </Box>
-    </>
-  );
-}
