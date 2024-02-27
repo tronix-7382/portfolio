@@ -2,10 +2,14 @@ import { Box, Button, Typography } from "@mui/material";
 import React from "react";
 import Title from "../components/Title";
 import headphone from "../assets/headphone2.png";
+import { Helmet } from "react-helmet";
 
 const Contact = () => {
   return (
     <>
+    <Helmet>
+        <title>Tronix | Contact 🤳</title>
+    </Helmet>
       <Box
         sx={{
           border: "1px solid rgba(0,160,250,0.1)",

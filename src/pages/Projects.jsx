@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import Title from "../components/Title";
 import ProjectCard from "../components/ProjectCard";
 import { projectsData } from "../constants/projects";
+import { Helmet } from "react-helmet";
 
 const Projects = () => {
   const [reverseData, setReverseData] = useState([]);
@@ -20,6 +21,9 @@ const Projects = () => {
   };
   return (
     <>
+      <Helmet>
+        <title>Tronix | Projects 🎒</title>
+      </Helmet>
       <Box
         sx={{
           border: "1px solid rgba(0,160,250,0.1)",
@@ -45,7 +49,9 @@ const Projects = () => {
             justifyContent: "center",
           }}
         >
-          {reverseData.map(data => <ProjectCard {...data.card} button={true} />)}
+          {reverseData.map((data) => (
+            <ProjectCard {...data.card} button={true} />
+          ))}
         </Box>
       </Box>
     </>

@@ -1,9 +1,14 @@
-import React from 'react'
+import React from "react";
+import { Helmet } from "react-helmet";
 
 const Blog = () => {
   return (
-    <div>Blog</div>
-  )
-}
+    <>
+      <Helmet>
+        <title>Tronix | Blog 📄</title>
+      </Helmet>
+    </>
+  );
+};
 
-export default Blog
+export default Blog;

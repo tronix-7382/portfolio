@@ -3,6 +3,7 @@ import React from "react";
 import Title from "../components/Title";
 import { galleryData } from "../constants/gallery";
 import ProjectCard from "../components/ProjectCard";
+import { Helmet } from "react-helmet";
 
 const Gallery = () => {
   return (
@@ -13,6 +14,9 @@ const Gallery = () => {
         backgroundColor: "primary.dark",
       }}
     >
+      <Helmet>
+        <title>Tronix | Gallery 🖼️</title>
+      </Helmet>
       <Title>Projects Picture</Title>
       <Box
         sx={{
@@ -20,8 +24,8 @@ const Gallery = () => {
           alignItems: "center",
           justifyContent: "center",
           flexWrap: "wrap",
-          gap:'.5rem',
-          mt:'1rem'
+          gap: ".5rem",
+          mt: "1rem",
         }}
       >
         {galleryData.map((data) => (

@@ -10,6 +10,7 @@ import PersonOutlineOutlinedIcon from "@mui/icons-material/PersonOutlineOutlined
 import CalendarMonthOutlinedIcon from "@mui/icons-material/CalendarMonthOutlined";
 import WarehouseOutlinedIcon from "@mui/icons-material/WarehouseOutlined";
 import HomeRepairServiceOutlinedIcon from "@mui/icons-material/HomeRepairServiceOutlined";
+import { Helmet } from "react-helmet";
 
 const Project = () => {
   const [project, setProject] = useState(null);
@@ -29,6 +30,9 @@ const Project = () => {
         <ClipLoader color="#36d7b7" />
       ) : (
         <>
+          <Helmet>
+            <title>Tronix | {project.card.title} 💻</title>
+          </Helmet>
           {/* Project Info Section */}
           <Box
             sx={{
