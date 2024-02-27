@@ -1,10 +1,24 @@
 import { Box, Typography } from "@mui/material";
-import React from "react";
+import React, { useEffect, useState } from "react";
 // icon
 import LocationOnIcon from "@mui/icons-material/LocationOn";
-import icon from '../../assets/logo.svg'
+import icon from "../../assets/logo.svg";
+import { RandomReveal } from "react-random-reveal";
+import TextTransition, { presets } from "react-text-transition";
 
 function NavbarInfo() {
+  const [index, setIndex] = useState(0);
+
+  const TEXTS = ["Front-End Developer", "Programmer", "Engineering Student", "Computer Lover", "ReactJs Developer", "Web Developer"];
+ 
+  useEffect(() => {
+    const intervalId = setInterval(
+      () => setIndex((index) => index + 1),
+      3000 // every 3 seconds
+    );
+
+    return () => clearTimeout(intervalId);
+  }, []);
   return (
     <>
       <Box
@@ -38,32 +52,58 @@ function NavbarInfo() {
           />
         </Box>
         {/* ======== content ========== */}
-        <Box sx={{display:{md:'none',xl:'block'}}}>
+        <Box sx={{ display: { md: "none", xl: "block" } }}>
           <Typography variant="h6" sx={{ opacity: ".9", fontSize: "1rem" }}>
-            Reza NourMohammadi
+            <RandomReveal
+              isPlaying
+              duration={2}
+              characters="Reza NourMohammadi"
+              revealEasing="easeInQuad"
+            />
           </Typography>
+          <Typography
+            sx={{
+              opacity: ".4",
+              fontSize: ".7rem",
+              display:"flex",
+               gap:'.2rem'
+            }}
+          >
+            I'm a{" "}
+            <TextTransition springConfig={presets.wobbly}>
+              {TEXTS[index % TEXTS.length]}
+            </TextTransition>
+          </Typography>
+
           <Typography
             sx={{
               opacity: ".4",
               fontSize: ".7rem",
             }}
           >
-            Front End Developer
-            <br />
-            <a href="https://B2n.ir/z27336" target="_blank" alt='mashhad' style={{textDecoration:'none', color:'#fff'}}>
-
-            <Box
-              sx={{
-                display: "flex",
-                alignItems: "center",
-                position: "relative",
+            <a
+              href="https://B2n.ir/z27336"
+              target="_blank"
+              alt="mashhad"
+              style={{
+                textDecoration: "none",
+                color: "#fff",
+                marginTop: ".4rem",
+                display: "block",
               }}
             >
-              <LocationOnIcon
-                sx={{ color: "rgba(0,170,170,.8)", fontSize: "1rem" }}
-              />
-              Iran - Mashhad
-            </Box>
+              <Box
+                sx={{
+                  display: "flex",
+                  alignItems: "center",
+                  position: "relative",
+                }}
+              >
+                <LocationOnIcon
+                  sx={{ color: "rgba(0,170,170,.8)", fontSize: "1rem" }}
+                />
+                Iran - Mashhad
+              </Box>
             </a>
           </Typography>
         </Box>
