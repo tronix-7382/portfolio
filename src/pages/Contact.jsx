@@ -109,7 +109,7 @@ const Contact = () => {
               padding: ".5rem .8rem",
               backgroundColor: "primary.dark",
               minWidth: {xs:'unset',md:"350px"},
-
+                
             }}
           >
             <Title>Address</Title>
@@ -156,12 +156,14 @@ const Contact = () => {
                 Contact Info
               </Typography>
               <Typography variant="caption" color="rgba(255,255,255,.6)">
-                +989910413641
+                Telegram : @Rnoorh7382 <br />
+                Email : rnoorh.work@gmail.com <br />
+                Linkedin : www.linkedin.com/in/reza7382 <br/>
+                Github : https://github.com/tronix-7382
               </Typography>
-              <Typography variant="caption" color="rgba(255,255,255,.6)">
-                rnoorh.work@gmail.com
-              </Typography>
+              
             </Box>
+            
           </Box>
         </Box>
       </Box>
