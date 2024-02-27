@@ -31,7 +31,7 @@ function HeroAboutMe() {
           "Islamic Azad University of Mashhad"
         </TextLink>
         . I'm a self-taught coder,
-        I love the feeling of finally figuring out a solution to a problem.
+        I love the feeling of figuring out a solution to a problem.
         currently, I am working with
         <TextLink link={"https://react.dev/"}> "React"</TextLink>, but I'm going
         to learn <TextLink link={"https://nextjs.org/"}> 'NextJs'</TextLink>,{" "}

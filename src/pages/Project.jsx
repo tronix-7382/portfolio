@@ -19,7 +19,7 @@ const Project = () => {
     setProject(
       projectsData.find(
         (data) => data.card.title.toLowerCase().split(" ").join("-") == id
-      )?.content
+      )
     );
   }, []);
 
@@ -34,13 +34,15 @@ const Project = () => {
             sx={{
               border: "1px solid rgba(0,160,255,.1)",
               backgroundColor: "primary.main",
-              padding: "1.5rem",
+              padding: { xs: ".5rem", md: "1.5rem" },
               display: "flex",
               alignItems: "stretch",
               justifyContent: "stretch",
               gap: "1rem",
+              flexDirection: { xs: "column", md: "row" },
             }}
           >
+            {/* Content */}
             <Box
               flexGrow={3}
               sx={{
@@ -51,18 +53,18 @@ const Project = () => {
               <Box
                 sx={{
                   border: "1px solid rgba(0,170,250,0.1)",
-                  padding: "1rem",
                   display: "inline-block",
+                  padding: { xs: ".3rem", md: "1rem" },
                 }}
               >
-                <Title>Project - {project.title}</Title>
+                <Title>Project - {project.content.title}</Title>
               </Box>
               <Box
                 sx={{
                   border: "1px solid rgba(0,170,250,0.1)",
-                  padding: "1.5rem 1rem",
+                  padding: { xs: "1rem .5rem", md: "1.5rem 1rem" },
                   mt: 2,
-                  flexGrow:1
+                  flexGrow: 1,
                 }}
               >
                 <Typography
@@ -72,10 +74,10 @@ const Project = () => {
                     fontSize: ".7rem",
                   }}
                 >
-                  {project.caption}
+                  {project.content.caption}
                 </Typography>
                 <Typography variant="h5" my={1}>
-                  📌 {project.title}{" "}
+                  📌 {project.content.title}{" "}
                 </Typography>
                 <Typography
                   variant="caption"
@@ -84,10 +86,11 @@ const Project = () => {
                     fontSize: ".8rem",
                   }}
                 >
-                  - {project.desc}
+                  - {project.content.desc}
                 </Typography>
               </Box>
             </Box>
+            {/* info cards */}
             <Box
               sx={{
                 border: "1px solid rgba(0,170,250,0.1)",
@@ -96,6 +99,7 @@ const Project = () => {
                 display: "flex",
                 flexDirection: "column",
                 gap: ".7rem",
+                minWidth: "360px",
               }}
             >
               <ProjectInfoCard
@@ -105,7 +109,7 @@ const Project = () => {
                   />
                 }
                 title="Client"
-                desc={project.client}
+                desc={project.content.client}
               />
               <ProjectInfoCard
                 icon={
@@ -114,7 +118,7 @@ const Project = () => {
                   />
                 }
                 title="Date"
-                desc={project.date}
+                desc={project.content.date}
               />
               <ProjectInfoCard
                 icon={
@@ -123,7 +127,7 @@ const Project = () => {
                   />
                 }
                 title="Service"
-                desc={project.service}
+                desc={project.content.service}
               />
               <ProjectInfoCard
                 icon={
@@ -132,10 +136,122 @@ const Project = () => {
                   />
                 }
                 title="Industry"
-                desc={project.industry}
+                desc={project.content.industry}
               />
             </Box>
           </Box>
+
+          {/* Problem / Soloution */}
+          <Box
+            sx={{
+              border: "1px solid rgba(0,170,250,.1)",
+              backgroundColor: "primary.main",
+              mt: 2,
+              display: "flex",
+              alignItems: "stretch",
+              gap: "1rem",
+              justifyContent: "center",
+              flexDirection: { xs: "column", md: "row" },
+              padding: { xs: ".5rem", md: "1.5rem" },
+            }}
+          >
+            <Box
+              sx={{
+                border: "1px solid rgba(0,170,250,.1)",
+                backgroundColor: "primary.main",
+                padding: "0.7rem",
+                width: "100%",
+                display: "flex",
+                flexDirection: "column",
+              }}
+            >
+              <Title> Problem 💀 </Title>
+              <Box
+                sx={{
+                  border: "1px solid rgba(0,170,250,0.1)",
+                  padding: "1rem",
+                  mt: 2,
+                  flexGrow: 1,
+                }}
+              >
+                <Typography
+                  sx={{ fontSize: ".9rem", color: "rgba(255,255,255,0.7)" }}
+                >
+                  {project.content.problem}
+                </Typography>
+              </Box>
+            </Box>
+            <Box
+              sx={{
+                border: "1px solid rgba(0,170,250,.1)",
+                backgroundColor: "primary.main",
+                padding: "0.7rem",
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "start",
+                width: "100%",
+              }}
+            >
+              <Title> Solution ✅ </Title>
+              <Box
+                sx={{
+                  border: "1px solid rgba(0,170,250,0.1)",
+                  padding: "1rem",
+                  mt: 2,
+                  flexGrow: 1,
+                }}
+              >
+                <Typography
+                  sx={{ fontSize: ".9rem", color: "rgba(255,255,255,0.7)" }}
+                >
+                  {project.content.solution}
+                </Typography>
+              </Box>
+            </Box>
+          </Box>
+
+          {/* Picture  */}
+          {project.content.images &&
+            project.content.images.map((data) => (
+              <Box
+                sx={{
+                  border: "1px solid rgba(0,170,250,.1)",
+                  backgroundColor: "primary.light",
+                  padding: { xs: "", md: "1rem" },
+                  overflow: "hidden",
+                  width: "100%",
+                  position: "relative",
+                  mt: 4,
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  "& img": {
+                    width: "100%",
+                    height: "100%",
+                    border: "1px solid rgba(0,170,250,.1)",
+                    padding: ".6rem",
+                    backgroundColor: "primary.light",
+                    objectFit: "cover",
+                    maxWidth: "1000px",
+                  },
+                  "&::after": {
+                    content: '" "',
+                    position: "absolute",
+                    backgroundColor: "rgba(0,0,0,0.3)",
+                    display: "block",
+                    inset: 0,
+                    transition: "all .5s",
+                  },
+                  "&:hover": {
+                    " &::after": {
+                      backgroundColor: "rgba(0,0,0,0.1)",
+                    },
+                  },
+                }}
+              >
+                <img src={data} alt="" />
+              </Box>
+            ))}
         </>
       )}
     </>

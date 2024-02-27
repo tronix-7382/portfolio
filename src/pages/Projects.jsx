@@ -27,7 +27,7 @@ const Projects = () => {
           width: "100%",
           display: "flex",
           flexDirection: "column",
-          padding: "1rem",
+          padding: ".5rem",
           alignItems: "start",
           gap: "1rem",
         }}

@@ -15,14 +15,20 @@ export const projectsData = [
     },
     content: {
       title: "React-Bootstrap",
-      caption: "Frist React-Bootsrap Project",
+      caption: " React-Bootsrap Project",
       desc: "My first bootstrap project in reactjs, we need to learn react-bootstrap in reactjs...",
       client: "Self-Tuaght",
       date: "December 15, 2023",
       service: "FrontEnd Development",
       industry: "No industry",
-      problem: "I cant use bootstrap",
-      solution: "We need to use reactBootstrap insted bootstrap because reactjs has no dependency on either bootstrap.js or jQuery. in jQuery we change directly the Dom but it's against the rules of reactjs.  "
+      problem:
+        "We Can't Use Bootstrap in ReactJs because reactjs has no dependency on either bootstrap.js or jQuery. in jQuery we directly change the Dom but it's against the rules of reactjs.",
+      solution:
+        "We need to use React-Bootstrap insted bootstrap, just need an easy npm installation",
+      images: [
+        "https://i.postimg.cc/c4rVwkSK/reactbootstrap.jpg",
+        "https://i.postimg.cc/hG44mJL4/smartmockups-lt2x24ub.jpg",
+      ],
     },
   },
   {
@@ -34,16 +40,22 @@ export const projectsData = [
       url: sabzlearn,
     },
     content: {
-        title: "Sabzlearn",
-        caption: "First React Project",
-        desc: "my first ReactJs project, The UI Design is from Sabzlearn.com",
-        client: "self-tuaght",
-        date: "December 15, 2023",
-        service: "FrontEnd Development",
-        industry: "No industry",
-        problem: "I cant use bootstrap",
-        solution: "We need to use reactBootstrap insted bootstrap because reactjs has no dependency on either bootstrap.js or jQuery. in jQuery we change directly the Dom but it's against the rules of reactjs.  "
-      },
+      title: "Sabzlearn",
+      caption: "First React Project",
+      desc: 'my first ReactJs project, The UI design of "Sabzlearn.com"',
+      client: "self-tuaght",
+      date: "December 15, 2023",
+      service: "FrontEnd Development",
+      industry: "No industry",
+      problem:
+        "As the project got bigger and bigger, I got lost in the codes and lost the ability to continue working on the project.",
+      solution:
+        "I looked for a solution to this problem and the only suggested way was practice and repetition. That's why I started this relatively small project. ",
+      images: [
+        "https://i.postimg.cc/W35HJgY6/sabzlearn.jpg",
+        "https://i.postimg.cc/sx10PxtF/sabzlearn2.jpg",
+      ],
+    },
   },
   {
     id: "3",
@@ -54,16 +66,24 @@ export const projectsData = [
       url: dashboard,
     },
     content: {
-        title: "React-Bootstrap",
-        caption: "Frist React-Bootsrap Project",
-        desc: "my first bootstrap project in reactjs",
-        client: "self-tuaght",
-        date: "December 15, 2023",
-        service: "FrontEnd Development",
-        industry: "No industry",
-        problem: "I cant use bootstrap",
-        solution: "We need to use reactBootstrap insted bootstrap because reactjs has no dependency on either bootstrap.js or jQuery. in jQuery we change directly the Dom but it's against the rules of reactjs.  "
-      },
+      title: "Dashboard Admin",
+      caption: "Material UI Project",
+      desc: "My first Material Ui Project , in this project i'm using a fake mySql backend (it's not for me) and i learn how to work with backend files with Xampp (fake local api) .",
+      client: "self-tuaght",
+      date: "December 15, 2023",
+      service: "FrontEnd Development",
+      industry: "No industry",
+      problem: "just I have problem with using MaterialUi Components",
+      solution:
+        "after search & learn more about materialUi, components, and how to customize components and theme and how to create a custom component , I Have lots of knowldege about how to use this React Component-Base library",
+      images: [
+        "https://i.postimg.cc/K8fCB6Wy/dashboard.jpg",
+        "https://i.postimg.cc/LXcWm2Jj/dashboard3.jpg",
+        "https://i.postimg.cc/PxpcGP5t/dashboard2.jpg",
+        "https://i.postimg.cc/8cL059v9/dashboard4.jpg",
+        "https://i.postimg.cc/rFLHbyXk/dashboard5.jpg",
+      ],
+    },
   },
   {
     id: "4",
@@ -74,16 +94,23 @@ export const projectsData = [
       url: monster,
     },
     content: {
-        title: "React-Bootstrap",
-        caption: "Frist React-Bootsrap Project",
-        desc: "my first bootstrap project in reactjs",
-        client: "self-tuaght",
-        date: "December 15, 2023",
-        service: "FrontEnd Development",
-        industry: "No industry",
-        problem: "I cant use bootstrap",
-        solution: "We need to use reactBootstrap insted bootstrap because reactjs has no dependency on either bootstrap.js or jQuery. in jQuery we change directly the Dom but it's against the rules of reactjs.  "
-      },
+      title: "Monster Energy",
+      caption: "Redux@Toolkit Project",
+      desc: "My first Redux Project, Redux is a application data-flow architecture that used for big and large applications that need states in morethan one/two components like shop projects . ",
+      client: "self-tuaght",
+      date: "December 15, 2023",
+      service: "FrontEnd Development",
+      industry: "No industry",
+      problem:
+        "I was having trouble with redux and I found it a bit complicated. After all the coding, I could not understand its function well",
+      solution:
+        "After I got acquainted with redux@toolkit and learned it, I also realized the functionality of Redux behind the scenes. In this project, I used redux@toolkit, as the redux creators recommended to use redux@toolkit.",
+      images: [
+        "https://i.postimg.cc/Jn8LQNQf/monster.jpg",
+        "https://i.postimg.cc/cC4Gpd2T/monster-2.jpg",
+        "https://i.postimg.cc/ZKnhjKr5/monster-3.jpg",
+      ],
+    },
   },
   {
     id: "5",
@@ -94,15 +121,23 @@ export const projectsData = [
       url: portfolio,
     },
     content: {
-        title: "React-Bootstrap",
-        caption: "Frist React-Bootsrap Project",
-        desc: "my first bootstrap project in reactjs",
-        client: "self-tuaght",
-        date: "December 15, 2023",
-        service: "FrontEnd Development",
-        industry: "No industry",
-        problem: "I cant use bootstrap",
-        solution: "We need to use reactBootstrap insted bootstrap because reactjs has no dependency on either bootstrap.js or jQuery. in jQuery we change directly the Dom but it's against the rules of reactjs.  "
-      },
+      title: "React-Bootstrap",
+      caption: "Frist React-Bootsrap Project",
+      desc: " I needed this application to be able to show my projects, experiences, and education to companies and interviewers. ",
+      client: "self-tuaght",
+      date: "December 15, 2023",
+      service: "FrontEnd Development",
+      industry: "No industry",
+      problem:
+        "I really wanted the design of this project to be my own, but...",
+      solution:
+        "according to some friends and guidance, my work is not design, but programming, so I gave up on last project ( last two picture 👇 ) and started coding this project.",
+      images: [
+        "https://i.postimg.cc/k4t2V3cn/protfoliov2.jpg",
+        "https://i.postimg.cc/8cQjMKKL/protfoliov2-2.jpg",
+        "https://i.postimg.cc/rsp7hQRP/protfoliov1.jpg",
+        "https://i.postimg.cc/BbwkRHxQ/protfoliov1-2.jpg",
+      ],
+    },
   },
 ];
