@@ -9,6 +9,7 @@ function ProjectInfoCard({ icon, title, desc }) {
         gap: "2rem",
       }}
     >
+      {/* icon */}
       <Box
         sx={{
           border: "1px solid rgba(0,170,250,0.1)",
@@ -17,6 +18,8 @@ function ProjectInfoCard({ icon, title, desc }) {
       >
         {icon}
       </Box>
+
+      {/* info */}
       <Box
         sx={{
           border: "1px solid rgba(0,170,250,0.1)",

@@ -8,6 +8,7 @@ import nextjs from "../assets/nextjs.svg";
 import typescript from "../assets/typescript.svg";
 import material from "../assets/material.svg";
 
+// About Me Slider Data here 
 export const statsIcon = [
   {
     id: "1",
@@ -39,12 +40,14 @@ export const statsIcon = [
   { id: "7", name: "material", icon: material, learned: 78 },
 ];
 
+// Drinked Coffee Stats Data here
 export const statsData = [
   { id: "1", caption: "Years of experience", value: 1 },
   { id: "2", caption: "Completed Projects", value: 4 },
   { id: "3", caption: "Drinked Coffee", value: 100 },
 ];
 
+// Progress Bar Data here
 export const coreStats = [
     {
         id: "1",

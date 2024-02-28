@@ -1,8 +1,10 @@
 import { Box, Typography } from "@mui/material";
 import React, { useEffect, useState } from "react";
+
 // icon
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import icon from "../../assets/logo.svg";
+
 import { RandomReveal } from "react-random-reveal";
 import TextTransition, { presets } from "react-text-transition";
 
@@ -16,9 +18,9 @@ function NavbarInfo() {
       () => setIndex((index) => index + 1),
       3000 // every 3 seconds
     );
-
     return () => clearTimeout(intervalId);
   }, []);
+
   return (
     <>
       <Box

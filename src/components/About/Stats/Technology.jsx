@@ -25,12 +25,17 @@ function Technology() {
           sx={{
             display: "flex",
             alignItems: "center",
-          gap: "1.5rem",
-          justifyContent: "center",
+            gap: "1.5rem",
+            justifyContent: "center",
           }}
         >
-          {statsIcon.map((stats) => (
-            <IconCard name={stats.name} icon={stats.icon} learned={stats.learned} />
+          {statsIcon.map((stats, index) => (
+            <IconCard
+              key={index}
+              name={stats.name}
+              icon={stats.icon}
+              learned={stats.learned}
+            />
           ))}
         </Box>
       </Box>
@@ -59,7 +64,7 @@ function IconCard({ icon, name, learned }) {
             width: "45px",
             height: "45px",
             objectFit: "contain",
-            opacity: learned <= 30 && '.3'
+            opacity: learned <= 30 && ".3",
           }}
         />
       </Box>

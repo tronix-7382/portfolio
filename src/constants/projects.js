@@ -4,6 +4,7 @@ import monster from "../assets/monsterEnergy.jpg";
 import portfolio from "../assets/portfolioImg.jpg";
 import reactBootstrap from "../assets/reactbootstrap.jpg";
 
+// Projects Data Here
 export const projectsData = [
   {
     id: "1",

@@ -1,9 +1,11 @@
-import { Box } from "@mui/material";
 import React from "react";
-import Title from "../components/Title";
+
+import { Box } from "@mui/material";
 import { galleryData } from "../constants/gallery";
-import ProjectCard from "../components/ProjectCard";
 import { Helmet } from "react-helmet";
+
+import Title from "../components/Title";
+import ProjectCard from "../components/ProjectCard";
 
 const Gallery = () => {
   return (
@@ -17,7 +19,9 @@ const Gallery = () => {
       <Helmet>
         <title>Tronix | Gallery 🖼️</title>
       </Helmet>
+
       <Title>Projects Picture</Title>
+
       <Box
         sx={{
           display: "flex",

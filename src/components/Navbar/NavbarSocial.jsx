@@ -34,30 +34,43 @@ function NavbarSocial() {
             border: "1px solid rgba(0,160,250,0.1)",
             padding: ".2rem 1rem",
             backgroundColor: "primary.dark",
-            display:{md:'none', xl:'block'}
+            display: { md: "none", xl: "block" },
           }}
         >
           <a
             href="https://www.linkedin.com/in/reza-nourmohammadi7382/"
             alt="linkedin"
             target="_blank"
+            rel="noreferrer"
           >
             <LinkedInIcon />
           </a>
-          <a href="https://telegram.com" alt="telegram" target="_blank">
+          <a
+            href="https://telegram.com"
+            rel="noreferrer"
+            alt="telegram"
+            target="_blank"
+          >
             <TelegramIcon />
           </a>
-          <a href="https://github.com/tronix-7382" alt="github" target="_blank">
+          <a
+            href="https://github.com/tronix-7382"
+            rel="noreferrer"
+            alt="github"
+            target="_blank"
+          >
             <GitHubIcon />
           </a>
           <a
             href="https://www.linkedin.com/in/reza-nourmohammadi7382/"
             alt="resume"
+            rel="noreferrer"
             target="_blank"
           >
             <ArticleIcon />
           </a>
         </Box>
+
         {/* copyright */}
         <Box
           sx={{

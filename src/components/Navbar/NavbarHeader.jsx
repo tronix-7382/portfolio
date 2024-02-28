@@ -83,6 +83,7 @@ const NavbarHeader = ({ setDrawerOpen }) => {
               TRONIX
             </Typography>
           </Box>
+          
           {/* Time & icon */}
           <Box>
             <Typography

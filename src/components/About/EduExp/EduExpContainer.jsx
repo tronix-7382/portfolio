@@ -39,9 +39,9 @@ function EduExpContainer({ title, data }) {
           }}
         >
             {title == 'Education' ? 
-            educationData.map(data => <InfoCard data={data} />)
+            educationData.map((data,index) => <InfoCard key={index} data={data} />)
             :
-            experienceData.map(data => <InfoCard data={data} />)
+            experienceData.map((data,index) => <InfoCard key={index} data={data} />)
 
             }
         </Box>

@@ -1,5 +1,6 @@
-import highschoolIcon from '../assets/highschool.jpg'
+import highschoolIcon from "../assets/highschool.jpg";
 
+// =========== Education Data Here
 export const educationData = [
   {
     id: "1",
@@ -17,7 +18,7 @@ export const educationData = [
   },
 ];
 
-//
+// =========== Experience Data Here
 export const experienceData = [
   {
     id: "1",

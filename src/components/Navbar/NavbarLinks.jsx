@@ -1,7 +1,9 @@
 import React from "react";
-import sidebarData from "../../constants/sidebar";
+
 import { Box, Typography } from "@mui/material";
 import { Link, useLocation } from "react-router-dom";
+
+import { sidebarData } from "../../constants";
 
 function NavbarLinks({ setDrawerOpen }) {
   const { pathname } = useLocation();
@@ -9,13 +11,15 @@ function NavbarLinks({ setDrawerOpen }) {
   return (
     <>
       <Box sx={{ mb: 2 }}>
-        {sidebarData.map((data) => (
+        {sidebarData.map((data,index) => (
           <Link
+          key={index}
             to={`/${data.title}`}
             onClick={() => {
               setDrawerOpen(false);
             }}
           >
+
             <Box
               sx={{
                 display: "flex",
@@ -40,6 +44,7 @@ function NavbarLinks({ setDrawerOpen }) {
                   : pathname == "/" && data.title == "home" && "active"
               }
             >
+
               <Box color={"rgba(0,160,255,.8)"}>{data.icon}</Box>
               <Typography
                 display={{ md: "none", xl: "block" }}

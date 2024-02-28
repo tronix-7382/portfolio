@@ -1,24 +1,21 @@
-import { Box } from "@mui/material";
 import React, { useEffect, useState } from "react";
-import Title from "../components/Title";
-import ProjectCard from "../components/ProjectCard";
+
+import { Box } from "@mui/material";
 import { projectsData } from "../constants/projects";
 import { Helmet } from "react-helmet";
+
+import reverseDataFunc from "../utility/reverseDataFunc";
+import ProjectCard from "../components/ProjectCard";
+import Title from "../components/Title";
 
 const Projects = () => {
   const [reverseData, setReverseData] = useState([]);
 
   useEffect(() => {
+    // {reverseDataFunc} on utility folder
     reverseDataFunc(setReverseData, projectsData);
   }, []);
 
-  const reverseDataFunc = (setReverseData, data) => {
-    const newData = [];
-    for (let i = data.length - 1; i >= 0; i--) {
-      newData.push(data[i]);
-    }
-    setReverseData(newData);
-  };
   return (
     <>
       <Helmet>

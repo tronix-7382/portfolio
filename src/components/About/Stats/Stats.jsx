@@ -46,8 +46,8 @@ function Stats() {
         <Technology />
 
         <Box ref={box} width='100%'>
-          {canSee < 1 && coreStats.map((skill) => (
-            <LinearSkills skill={skill} />
+          {canSee < 1 && coreStats.map((skill, index) => (
+            <LinearSkills key={index} skill={skill} />
           ))}
         </Box>
 
@@ -61,8 +61,8 @@ function Stats() {
             width: "100%",
           }}
         >
-          {statsData.map((stat) => (
-            <StatsCard data={stat} />
+          {statsData.map((stat, index) => (
+            <StatsCard key={index} data={stat} />
           ))}
         </Box>
       </Box>

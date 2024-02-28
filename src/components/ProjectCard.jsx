@@ -1,5 +1,5 @@
 import { Box, Typography } from "@mui/material";
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import ChevronRightOutlinedIcon from "@mui/icons-material/ChevronRightOutlined";
 import EastOutlinedIcon from "@mui/icons-material/EastOutlined";
@@ -18,7 +18,7 @@ function ProjectCard({ title, caption, year, url, fw, button, hoverUrl }) {
         setLoading(false);
       }, 1000);
     };
-  }, []);
+  }, [url]);
 
   return (
     <>
@@ -53,7 +53,9 @@ function ProjectCard({ title, caption, year, url, fw, button, hoverUrl }) {
           },
         }}
       >
-        <Link to={button && `/project/${title.toLowerCase().split(' ').join('-')}`}>
+        <Link
+          to={button && `/project/${title.toLowerCase().split(" ").join("-")}`}
+        >
           <Box
             sx={{
               width: "100%",

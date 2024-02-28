@@ -1,9 +1,11 @@
 import React from "react";
-import Hero from "../components/About/Hero/Hero";
+
 import { Box } from "@mui/material";
+import { Helmet } from "react-helmet";
+
+import Hero from "../components/About/Hero/Hero";
 import EduExp from "../components/About/EduExp/EduExp";
 import Stats from "../components/About/Stats/Stats";
-import { Helmet } from "react-helmet";
 
 const About = () => {
   return (

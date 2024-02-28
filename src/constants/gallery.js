@@ -1,3 +1,4 @@
+// Gallery Data Here
 export const galleryData = [
   {
     id: "27",
