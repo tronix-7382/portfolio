@@ -11,15 +11,14 @@ function NavbarLinks({ setDrawerOpen }) {
   return (
     <>
       <Box sx={{ mb: 2 }}>
-        {sidebarData.map((data,index) => (
+        {sidebarData.map((data, index) => (
           <Link
-          key={index}
+            key={index}
             to={`/${data.title}`}
             onClick={() => {
               setDrawerOpen(false);
             }}
           >
-
             <Box
               sx={{
                 display: "flex",
@@ -35,7 +34,7 @@ function NavbarLinks({ setDrawerOpen }) {
                 },
                 "&:hover": {
                   opacity: "1",
-                  transition:'all .3s'
+                  transition: "all .3s",
                 },
               }}
               className={
@@ -44,7 +43,6 @@ function NavbarLinks({ setDrawerOpen }) {
                   : pathname == "/" && data.title == "home" && "active"
               }
             >
-
               <Box color={"rgba(0,160,255,.8)"}>{data.icon}</Box>
               <Typography
                 display={{ md: "none", xl: "block" }}

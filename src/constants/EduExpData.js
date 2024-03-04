@@ -1,14 +1,7 @@
-import highschoolIcon from "../assets/highschool.jpg";
 
 // =========== Education Data Here
 export const educationData = [
-  {
-    id: "1",
-    title: "Shahed Shahid Chamran highSchool",
-    time: "2019 - 2022",
-    caption: "Experimental Science",
-    img: highschoolIcon,
-  },
+  
   {
     id: "1",
     title: "Islamic Azad University",

@@ -112,10 +112,10 @@ const Contact = () => (
             Contact Info
           </Typography>
           <Typography variant="caption" color="rgba(255,255,255,.6)">
-            Telegram : @Rnoorh7382 <br />
+            Telegram : t.me/rnoorh7382 <br />
             Email : rnoorh.work@gmail.com <br />
             Linkedin : www.linkedin.com/in/reza7382 <br />
-            Github : https://github.com/tronix-7382
+            Github : github.com/tronix-7382
           </Typography>
         </ContactInfo>
       </Box>

@@ -1,7 +1,7 @@
 import { Box } from "@mui/material";
 import React from "react";
 
-function ProjectPicture({url}) {
+function ProjectPicture({ url }) {
   return (
     <Box
       sx={{
@@ -18,8 +18,8 @@ function ProjectPicture({url}) {
         "& img": {
           width: "100%",
           height: "100%",
+          padding: { xs: ".1rem", md: ".7rem" },
           border: "1px solid rgba(0,170,250,.1)",
-          padding: ".6rem",
           backgroundColor: "primary.light",
           objectFit: "cover",
           maxWidth: "1000px",

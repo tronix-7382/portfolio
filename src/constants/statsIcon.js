@@ -7,8 +7,9 @@ import bootstrap from "../assets/bootstrap.svg";
 import nextjs from "../assets/nextjs.svg";
 import typescript from "../assets/typescript.svg";
 import material from "../assets/material.svg";
+import tailwind from "../assets/tailwind.png"
 
-// About Me Slider Data here 
+// Slider Data here 
 export const statsIcon = [
   {
     id: "1",
@@ -21,9 +22,10 @@ export const statsIcon = [
   { id: "4", name: "sass", icon: sass, learned:76  },
   { id: "5", name: "bootstrap", icon: react, learned: 84  },
   { id: "6", name: "react", icon: bootstrap, learned: 82 },
-  { id: "7", name: "next", icon: nextjs, learned: 5 },
-  { id: "8", name: "typescript", icon: typescript, learned: 5 },
   { id: "7", name: "material", icon: material, learned: 78 },
+  { id: "7", name: "tailwind", icon: tailwind, learned: 5 },
+  { id: "8", name: "typescript", icon: typescript, learned: 5 },
+  { id: "7", name: "next", icon: nextjs, learned: 5 },
   {
     id: "1",
     name: "html",
@@ -54,12 +56,13 @@ export const coreStats = [
         name: "html",
         learned: 88,
       },
-      { id: "2", name: "css", learned: 80  },
+      { id: "2", name: "css", learned: 82  },
       { id: "3", name: "javaScript", learned:78  },
-      { id: "4", name: "sass",  learned:76  },
+      { id: "4", name: "sass",  learned:72  },
       { id: "5", name: "bootstrap", learned: 84  },
-      { id: "6", name: "react", learned: 82 },
-      { id: "7", name: "material", learned: 78 },
-      { id: "8", name: "next",  learned: 5 },
+      { id: "6", name: "reactJs", learned: 82 },
+      { id: "7", name: "materialUi", learned: 78 },
+      { id: "8", name: "tailwindCss", learned: 5 },
       { id: "9", name: "typescript",  learned: 5 },
+      { id: "10", name: "nextJs",  learned: 5 },
 ]

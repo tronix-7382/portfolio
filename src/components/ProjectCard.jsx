@@ -14,9 +14,7 @@ function ProjectCard({ title, caption, year, url, fw, button, hoverUrl }) {
     image.src = url;
 
     image.onload = () => {
-      setTimeout(() => {
         setLoading(false);
-      }, 1000);
     };
   }, [url]);
 
@@ -81,6 +79,7 @@ function ProjectCard({ title, caption, year, url, fw, button, hoverUrl }) {
                   objectFit: "cover",
                   border: "1px solid rgba(0,70,250,.1)",
                   opacity: "0.8",
+                  
                 }}
               />
             )}

@@ -1,5 +1,5 @@
 import About from "../pages/About";
-import Blog from "../pages/Blog";
+import Certifications from "../pages/Certifications";
 import Contact from "../pages/Contact";
 import Gallery from "../pages/Gallery";
 import Project from "../pages/Project";
@@ -14,7 +14,7 @@ const routes = () => [
     {path:'/project/:id', element: <Project/>},
     {path:'/gallery', element: <Gallery/>},
     {path:'/contact', element: <Contact/>},
-    {path:'/blog', element: <Blog/>},
+    {path:'/certifications', element: <Certifications/>},
     {path:'*', element: <p>404 Not Found</p>}
 ]
 

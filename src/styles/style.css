@@ -32,9 +32,9 @@ body {
   }
 }
 
-/* ============ stats Animation ============= */
+/* ============ Logo Swiper Animation ============= */
 .statsAnimation {
-  animation: goToLeft 10s infinite linear;
+  animation: goToLeft 8s infinite linear;
 }
 
 @keyframes goToLeft {
@@ -42,6 +42,6 @@ body {
     transform: translateX(850px);
   }
   to {
-    transform: translateX(-490px);
+    transform: translateX(-640px);
   }
 }

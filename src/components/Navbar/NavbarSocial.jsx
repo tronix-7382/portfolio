@@ -8,6 +8,8 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import ArticleIcon from "@mui/icons-material/Article";
 import CopyrightIcon from "@mui/icons-material/Copyright";
 
+import resume from '../../assets/resume.pdf'
+
 function NavbarSocial() {
   return (
     <>
@@ -38,7 +40,7 @@ function NavbarSocial() {
           }}
         >
           <a
-            href="https://www.linkedin.com/in/reza-nourmohammadi7382/"
+            href="https://www.linkedin.com/in/reza7382"
             alt="linkedin"
             target="_blank"
             rel="noreferrer"
@@ -46,7 +48,7 @@ function NavbarSocial() {
             <LinkedInIcon />
           </a>
           <a
-            href="https://telegram.com"
+            href="https://t.me/rnoorh7382"
             rel="noreferrer"
             alt="telegram"
             target="_blank"
@@ -62,7 +64,7 @@ function NavbarSocial() {
             <GitHubIcon />
           </a>
           <a
-            href="https://www.linkedin.com/in/reza-nourmohammadi7382/"
+            href={resume}
             alt="resume"
             rel="noreferrer"
             target="_blank"

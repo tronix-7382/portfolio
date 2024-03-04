@@ -43,7 +43,7 @@ export const projectsData = [
     content: {
       title: "Sabzlearn",
       caption: "First React Project",
-      desc: 'my first ReactJs project, The UI design of "Sabzlearn.com"',
+      desc: 'My first ReactJs project, it is the UI design of "Sabzlearn.com"',
       client: "self-tuaght",
       date: "December 15, 2023",
       service: "FrontEnd Development",
@@ -74,9 +74,9 @@ export const projectsData = [
       date: "December 15, 2023",
       service: "FrontEnd Development",
       industry: "No industry",
-      problem: "just I have problem with using MaterialUi Components",
+      problem: "I wanted to measure my knowledge level of materialUi, and working with the backend file.",
       solution:
-        "after search & learn more about materialUi, components, and how to customize components and theme and how to create a custom component , I Have lots of knowldege about how to use this React Component-Base library",
+        "after search & learn more about materialUi and its components and how to customize them, create a custom component, I Have knowldege as much about how to use this React Component-Base library",
       images: [
         "https://i.postimg.cc/K8fCB6Wy/dashboard.jpg",
         "https://i.postimg.cc/LXcWm2Jj/dashboard3.jpg",
@@ -103,9 +103,9 @@ export const projectsData = [
       service: "FrontEnd Development",
       industry: "No industry",
       problem:
-        "I was having trouble with redux and I found it a bit complicated. After all the coding, I could not understand its function well",
+        "I had trouble with redux and I found it a bit complicated. After all practicing and coding, I couldn't understand its function well",
       solution:
-        "After I got acquainted with redux@toolkit and learned it, I also realized the functionality of Redux behind the scenes. In this project, I used redux@toolkit, as the redux creators recommended to use redux@toolkit.",
+        "After I got acquainted with redux@toolkit and learned it, I also realized the functionality of Redux behind the scenes . In this project, I used redux@toolkit as the redux creators recommended.",
       images: [
         "https://i.postimg.cc/Jn8LQNQf/monster.jpg",
         "https://i.postimg.cc/cC4Gpd2T/monster-2.jpg",
@@ -130,9 +130,9 @@ export const projectsData = [
       service: "FrontEnd Development",
       industry: "No industry",
       problem:
-        "I really wanted the design of this project to be my own, but...",
+        "my problem in this project is that I really wanted to design this project to be my own, but ...",
       solution:
-        "according to some friends and guidance, my work is not design, but programming, so I gave up on last project ( last two picture 👇 ) and started coding this project.",
+        "according to some friends and guidance, design isn't in my field, so I gave up on last project ( last two picture 👇 ) and started coding this project.",
       images: [
         "https://i.postimg.cc/k4t2V3cn/protfoliov2.jpg",
         "https://i.postimg.cc/8cQjMKKL/protfoliov2-2.jpg",

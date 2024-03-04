@@ -41,13 +41,13 @@ const Projects = () => {
             alignItems: "center",
             gap: "1rem",
             flexWrap: "wrap",
-            padding: ".5rem",
+            padding: ".5rem ",
             width: "100%",
             justifyContent: "center",
           }}
         >
           {reverseData.map((data) => (
-            <ProjectCard {...data.card} button={true} />
+            <ProjectCard key={data.id} {...data.card} button={true} />
           ))}
         </Box>
       </Box>

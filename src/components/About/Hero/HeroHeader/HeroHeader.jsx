@@ -4,6 +4,7 @@ import HeroHeaderCard from "./HeroHeaderCard";
 import DocumentScannerOutlinedIcon from '@mui/icons-material/DocumentScannerOutlined';
 import AccessTimeOutlinedIcon from '@mui/icons-material/AccessTimeOutlined';
 import PersonOutlineOutlinedIcon from '@mui/icons-material/PersonOutlineOutlined';
+import resume from '../../../../assets/resume.pdf'
 
 const HeroHeader = () => {
     const [time,setTime] = useState('')
@@ -44,7 +45,7 @@ const HeroHeader = () => {
         <HeroHeaderCard
             text={"Download Resume"}
             icon={<DocumentScannerOutlinedIcon sx={{fontSize:'1.2rem'}}/>}
-            link={'https://B2n.ir/a13237'}
+            href={resume}
             blank={true}
         />
 

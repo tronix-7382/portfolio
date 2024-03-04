@@ -2,6 +2,8 @@ import { Box } from "@mui/material";
 import React from "react";
 import { statsIcon } from "../../../constants/statsIcon";
 
+
+// Logo Swipers
 function Technology() {
   return (
     <>
@@ -11,16 +13,15 @@ function Technology() {
           width: "95%",
           margin: "0 auto",
           padding: "1rem",
-
           opacity: "0.8",
           overflow: "hidden",
           boxShadow: "0 0 10px 4px black inset",
           maskImage:
             "linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 5%, rgb(0, 0, 0) 95%, rgba(0, 0, 0, 0) 100%)",
         }}
-        //styled in styles/style.css
       >
         <Box
+          //styled in styles/style.css
           className="statsAnimation"
           sx={{
             display: "flex",
@@ -52,7 +53,8 @@ function IconCard({ icon, name, learned }) {
         sx={{
           borderTop: "1px solid",
           borderBottom: "1px solid",
-          borderColor: "rgba(0,160,250,0.2)",
+          borderColor:
+            learned <= 30 ? "rgba(0,160,250,0)" : "rgba(0,160,250,0.3)",
           backgroundColor: "primary.light",
           padding: ".7rem 2.5rem",
         }}
