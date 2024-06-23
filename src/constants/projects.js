@@ -3,6 +3,7 @@ import dashboard from "../assets/dashboard.jpg";
 import monster from "../assets/monsterEnergy.jpg";
 import portfolio from "../assets/portfolioImg.jpg";
 import reactBootstrap from "../assets/reactbootstrap.jpg";
+import greenStore from "../assets/green.jpg";
 
 // Projects Data Here
 export const projectsData = [
@@ -74,7 +75,8 @@ export const projectsData = [
       date: "December 15, 2023",
       service: "FrontEnd Development",
       industry: "No industry",
-      problem: "I wanted to measure my knowledge level of materialUi, and working with the backend file.",
+      problem:
+        "I wanted to measure my knowledge level of materialUi, and working with the backend file.",
       solution:
         "after search & learn more about materialUi and its components and how to customize them, create a custom component, I Have knowldege as much about how to use this React Component-Base library",
       images: [
@@ -139,6 +141,28 @@ export const projectsData = [
         "https://i.postimg.cc/rsp7hQRP/protfoliov1.jpg",
         "https://i.postimg.cc/BbwkRHxQ/protfoliov1-2.jpg",
       ],
+    },
+  },
+  {
+    id: "6",
+    card: {
+      title: "GreenStore",
+      caption: "Ecommerce Flower And Plant Shop",
+      year: "2023",
+      url: greenStore,
+    },
+    content: {
+      title: "Sabzlearn",
+      caption: "First React Project",
+      desc: 'An ecommerce project with "HTML" - "CSS" - "REACTJS" - "FORMIK" - "REDUX@TOOLKIT" ',
+      client: "self-tuaght",
+      date: "December 15, 2023",
+      service: "FrontEnd Development",
+      industry: "No industry",
+      problem:
+        "I needed a more comprehensive project to make sure I learned the past topics and use them together",
+      solution: " I have'nt problem with this project . i'm using framermotion for animations ",
+      images: [greenStore],
     },
   },
 ];

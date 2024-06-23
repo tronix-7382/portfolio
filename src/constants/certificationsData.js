@@ -74,10 +74,10 @@ export const certificationsData = [
   {
     id: "8",
     card: {
-      title: "ReactJs + Redux ( Soon ... )",
+      title: "ReactJs + Redux",
       caption: "I3Center",
-      year: "Soon",
-      url: "",
+      year: "1402/02/14",
+      url: "https://i.postimg.cc/kgmX34Jb/reactjs-Cert.jpg",
     },
   },
 ];
