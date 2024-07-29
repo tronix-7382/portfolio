@@ -8,7 +8,6 @@ import ProjectCard from "../components/ProjectCard";
 import { certificationsData } from "../constants/certificationsData";
 
 const Certifications = () => {
-  const [picture, setPicture] = useState(null);
 
   return (
     <Box
@@ -44,9 +43,7 @@ const Certifications = () => {
               },
               width: "100%",
             }}
-            onClick={()=> {
-               setPicture(data.card.url)
-            }}
+            
           >
             <ProjectCard key={data.id} {...data.card} fw={true} />
           </Box>

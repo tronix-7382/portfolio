@@ -1,6 +1,5 @@
 import { Box } from "@mui/material";
 import React, { useState } from "react";
-import NavbarInfo from "./NavbarInfo";
 import NavbarLinks from "./NavbarLinks";
 import NavbarSocial from "./NavbarSocial";
 import NavbarHeader from "./NavbarHeader";
@@ -16,7 +15,7 @@ function Navbar() {
           border: "0.1px solid rgba(155,155,155,.1)",
           position: {md:"fixed"},
           top: { md: "5px", xl: "15px" },
-          bottom: {xl:'unset', md: "5px", xl: "15px" },
+          bottom: { md: "5px", xl: "15px" },
           right:{xs:'5px',md:'unset'},
           left:{xs:'5px',md: "5px", xl: "15px" },
           display: "flex",

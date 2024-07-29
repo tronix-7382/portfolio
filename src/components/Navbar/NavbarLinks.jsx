@@ -38,9 +38,9 @@ function NavbarLinks({ setDrawerOpen }) {
                 },
               }}
               className={
-                pathname.split("/")[1] == data.title
+                pathname.split("/")[1] === data.title
                   ? "active"
-                  : pathname == "/" && data.title == "home" && "active"
+                  : pathname === "/" && data.title === "home" && "active"
               }
             >
               <Box color={"rgba(0,160,255,.8)"}>{data.icon}</Box>

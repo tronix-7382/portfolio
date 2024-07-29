@@ -87,6 +87,7 @@ function NavbarInfo() {
               href="https://B2n.ir/z27336"
               target="_blank"
               alt="mashhad"
+              rel="noreferrer"
               style={{
                 textDecoration: "none",
                 color: "#fff",

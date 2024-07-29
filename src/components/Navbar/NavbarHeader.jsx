@@ -1,4 +1,4 @@
-import { Box, Typography, useScrollTrigger } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import React, { useEffect, useState } from "react";
 import NavbarInfo from "./NavbarInfo";
 
@@ -13,10 +13,10 @@ const NavbarHeader = ({ setDrawerOpen }) => {
     const date = new Date();
 
     setTime(
-      `${date.getHours().toString().length == 1
+      `${date.getHours().toString().length === 1
         ? "0" + date.getHours().toString()
         : date.getHours()}:${
-        date.getMinutes().toString().length == 1
+        date.getMinutes().toString().length === 1
           ? "0" + date.getMinutes().toString()
           : date.getMinutes()
       } `
@@ -25,10 +25,10 @@ const NavbarHeader = ({ setDrawerOpen }) => {
     setInterval(() => {
       const date = new Date();
       setTime(
-        `${date.getHours().toString().length == 1
+        `${date.getHours().toString().length === 1
           ? "0" + date.getHours().toString()
           : date.getHours()}:${
-          date.getMinutes().toString().length == 1
+          date.getMinutes().toString().length === 1
             ? "0" + date.getMinutes().toString()
             : date.getMinutes()
         } `

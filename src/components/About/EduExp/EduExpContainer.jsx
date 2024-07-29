@@ -1,6 +1,6 @@
 import React from "react";
 import Title from "../../Title";
-import { Box, Typography } from "@mui/material";
+import { Box } from "@mui/material";
 import { educationData, experienceData } from "../../../constants/EduExpData";
 import InfoCard from "./InfoCard";
 
@@ -38,7 +38,7 @@ function EduExpContainer({ title, data }) {
             },
           }}
         >
-            {title == 'Education' ? 
+            {title === 'Education' ? 
             educationData.map((data,index) => <InfoCard key={index} data={data} />)
             :
             experienceData.map((data,index) => <InfoCard key={index} data={data} />)

@@ -23,7 +23,7 @@ export const statsIcon = [
   { id: "5", name: "bootstrap", icon: react, learned: 84  },
   { id: "6", name: "react", icon: bootstrap, learned: 82 },
   { id: "7", name: "material", icon: material, learned: 78 },
-  { id: "7", name: "tailwind", icon: tailwind, learned: 5 },
+  { id: "7", name: "tailwind", icon: tailwind, learned: 74 },
   { id: "8", name: "typescript", icon: typescript, learned: 5 },
   { id: "7", name: "next", icon: nextjs, learned: 5 },
   {
@@ -38,7 +38,7 @@ export const statsIcon = [
   { id: "5", name: "bootstrap", icon: react, learned: 84  },
   { id: "6", name: "react", icon: bootstrap, learned: 82 },
   { id: "7", name: "next", icon: nextjs, learned: 5 },
-  { id: "8", name: "typescript", icon: typescript, learned: 5 },
+  { id: "8", name: "typescript", icon: typescript, learned: 74 },
   { id: "7", name: "material", icon: material, learned: 78 },
 ];
 
@@ -62,7 +62,7 @@ export const coreStats = [
       { id: "5", name: "bootstrap", learned: 84  },
       { id: "6", name: "reactJs", learned: 82 },
       { id: "7", name: "materialUi", learned: 78 },
-      { id: "8", name: "tailwindCss", learned: 5 },
+      { id: "8", name: "tailwindCss", learned: 74 },
       { id: "9", name: "typescript",  learned: 5 },
       { id: "10", name: "nextJs",  learned: 5 },
 ]

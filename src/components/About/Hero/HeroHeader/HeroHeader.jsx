@@ -9,10 +9,10 @@ import resume from '../../../../assets/resume.pdf'
 const HeroHeader = () => {
     const [time,setTime] = useState('')
 
-    useEffect(()=> {
+    useEffect(() => {
         const date = new Date()
         setTime(date.toLocaleString())
-    })
+    },[])
 
   return (
     <>

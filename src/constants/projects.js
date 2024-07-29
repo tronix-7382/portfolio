@@ -148,7 +148,7 @@ export const projectsData = [
     card: {
       title: "GreenStore",
       caption: "Ecommerce Flower And Plant Shop",
-      year: "2023",
+      year: "2024",
       url: greenStore,
     },
     content: {
@@ -156,7 +156,7 @@ export const projectsData = [
       caption: "First React Project",
       desc: 'An ecommerce project with "HTML" - "CSS" - "REACTJS" - "FORMIK" - "REDUX@TOOLKIT" ',
       client: "self-tuaght",
-      date: "December 15, 2023",
+      date: "December 15, 2024",
       service: "FrontEnd Development",
       industry: "No industry",
       problem:
