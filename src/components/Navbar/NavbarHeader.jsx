@@ -4,7 +4,7 @@ import NavbarInfo from "./NavbarInfo";
 
 import MenuIcon from "@mui/icons-material/Menu";
 
-import icon from '../../assets/logo.svg'
+import icon from '../../assets/logo.png'
 
 const NavbarHeader = ({ setDrawerOpen }) => {
   const [time, setTime] = useState("");
@@ -67,10 +67,12 @@ const NavbarHeader = ({ setDrawerOpen }) => {
               sx={{
                 border: "1px solid rgba(150,150,150,.1)",
                 backgroundColor: "primary.light",
-                p: "1rem .8rem",
+                p: ".6rem",
+                width:"60px",
+                height:"60px"
               }}
             >
-              <img src={icon} alt="Me" />
+              <img src={icon} alt="Me" style={{width:"100%", height:"100%"}} />
             </Box>
             <Typography
               sx={{

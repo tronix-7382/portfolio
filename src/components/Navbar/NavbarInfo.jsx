@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 
 // icon
 import LocationOnIcon from "@mui/icons-material/LocationOn";
-import icon from "../../assets/logo.svg";
+import icon from "../../assets/logo.png";
 
 import { RandomReveal } from "react-random-reveal";
 import TextTransition, { presets } from "react-text-transition";
@@ -11,8 +11,17 @@ import TextTransition, { presets } from "react-text-transition";
 function NavbarInfo() {
   const [index, setIndex] = useState(0);
 
-  const TEXTS = ["Front-End Developer", "Programmer", "Engineering Student", "Computer Lover", "ReactJs Developer", "Web Developer"];
- 
+  const TEXTS = [
+    "Front-End Developer",
+    "Programmer",
+    "Engineering Student",
+    "Back-End Developer",
+    "ReactJs Developer",
+    "Web Developer",
+    "Nodejs Developer",
+    "MERN Developer",
+  ];
+
   useEffect(() => {
     const intervalId = setInterval(
       () => setIndex((index) => index + 1),
@@ -67,8 +76,8 @@ function NavbarInfo() {
             sx={{
               opacity: ".4",
               fontSize: ".7rem",
-              display:"flex",
-               gap:'.2rem'
+              display: "flex",
+              gap: ".2rem",
             }}
           >
             I'm a{" "}

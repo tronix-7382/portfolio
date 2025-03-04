@@ -5,4 +5,3 @@ export { projectsData } from "./projects";
 export { sidebarData } from "./sidebar";
 export { statsIcon } from "./statsIcon";
 export { statsData } from "./statsIcon";
-export { coreStats } from "./statsIcon";

@@ -2,7 +2,6 @@ import { Box } from "@mui/material";
 import React from "react";
 import { statsIcon } from "../../../constants/statsIcon";
 
-
 // Logo Swipers
 function Technology() {
   return (
@@ -54,7 +53,7 @@ function IconCard({ icon, name, learned }) {
           borderTop: "1px solid",
           borderBottom: "1px solid",
           borderColor:
-            learned <= 30 ? "rgba(0,160,250,0)" : "rgba(0,160,250,0.3)",
+            learned <= 30 ? "rgba(0,160,250,0)" : "rgba(0,160,250,.3)",
           backgroundColor: "primary.light",
           padding: ".7rem 2.5rem",
         }}
@@ -63,10 +62,11 @@ function IconCard({ icon, name, learned }) {
           src={icon}
           alt={name}
           style={{
-            width: "45px",
-            height: "45px",
+            width: "50px",
+            height: "50px",
             objectFit: "contain",
-            opacity: learned <= 30 && ".3",
+            opacity: learned <= 30 && ".4",
+            filter: learned > 30 && "brightness(1.2)" 
           }}
         />
       </Box>

@@ -34,14 +34,14 @@ body {
 
 /* ============ Logo Swiper Animation ============= */
 .statsAnimation {
-  animation: goToLeft 8s infinite linear;
+  animation: goToLeft 15s infinite linear;
 }
 
 @keyframes goToLeft {
   from {
-    transform: translateX(850px);
+    transform: translateX(2455px);
   }
   to {
-    transform: translateX(-640px);
+    transform: translateX(-488px);
   }
 }

@@ -3,7 +3,7 @@ import React, { useEffect, useRef, useState } from "react";
 import Title from "../../Title";
 import Technology from "./Technology";
 import StatsCard from "./StatsCard";
-import { coreStats, statsData } from "../../../constants/statsIcon";
+import { backStats, frontStats, statsData } from "../../../constants/statsIcon";
 import LinearSkills from "./LinearSkill";
 
 function Stats() {
@@ -14,16 +14,14 @@ function Stats() {
     document.addEventListener("scroll", canSeeHandler);
 
     return () => {
-        document.removeEventListener("scroll", canSeeHandler);
-      };
+      document.removeEventListener("scroll", canSeeHandler);
+    };
   }, []);
 
-  function canSeeHandler(){
+  function canSeeHandler() {
     setCanSee(
-        ((box.current.offsetTop - window.innerHeight) / window.scrollY).toFixed(
-          1
-        )
-      );
+      ((box.current.offsetTop - window.innerHeight) / window.scrollY).toFixed(1)
+    );
   }
 
   return (
@@ -32,7 +30,7 @@ function Stats() {
         sx={{
           backgroundColor: "primary.dark",
           width: "100%",
-          padding: {xs:'1rem .5rem',md:"1rem 1.2rem"},
+          padding: { xs: "1rem .5rem", md: "1rem 1.2rem" },
           border: "1px solid rgba(0,160,250,0.1)",
           display: "flex",
           alignItems: "start",
@@ -45,10 +43,27 @@ function Stats() {
 
         <Technology />
 
-        <Box ref={box} width='100%'>
-          {canSee < 1 && coreStats.map((skill, index) => (
-            <LinearSkills key={index} skill={skill} />
-          ))}
+        <Box ref={box} width="100%">
+          <Box sx={{
+            margin:".6rem 1rem"
+          }}>
+            <Title>FrontEnd</Title>
+          </Box>
+
+          {canSee < 1 &&
+            frontStats.map((skill, index) => (
+              <LinearSkills key={index} skill={skill} />
+            ))}
+          <Box sx={{
+            margin:".6rem 1rem"
+          }}>
+            <Title>BackEnd</Title>
+          </Box>
+
+          {canSee < 1 &&
+            backStats.map((skill, index) => (
+              <LinearSkills key={index} skill={skill} />
+            ))}
         </Box>
 
         <Box
