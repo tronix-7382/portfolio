@@ -98,8 +98,8 @@ export const frontStats = [
 export const backStats = [
   { id: "11", name: "Nodejs", learned: 63 },
   { id: "12", name: "expressjs", learned: 78 },
-  { id: "13", name: "MongoDB", learned: 5 },
-  { id: "14", name: "Mongoose", learned: 69 },
+  { id: "13", name: "MongoDB", learned: 69 },
+  { id: "14", name: "Mongoose", learned: 76 },
   { id: "15", name: "SQL", learned: 5 },
   { id: "16", name: "msSQL", learned: 5 },
   { id: "17", name: "Pug", learned: 90 },
