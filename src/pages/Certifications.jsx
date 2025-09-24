@@ -8,7 +8,6 @@ import ProjectCard from "../components/ProjectCard";
 import { certificationsData } from "../constants/certificationsData";
 
 const Certifications = () => {
-
   return (
     <Box
       sx={{
@@ -34,19 +33,7 @@ const Certifications = () => {
         }}
       >
         {certificationsData.map((data) => (
-          <Box
-            sx={{
-              maxWidth: {
-                xs: "350px",
-                md: "390px",
-                xl: "510px",
-              },
-              width: "100%",
-            }}
-            
-          >
-            <ProjectCard key={data.id} {...data.card} fw={true} />
-          </Box>
+          <ProjectCard key={data.id} {...data.card} fw={true} />
         ))}
       </Box>
     </Box>

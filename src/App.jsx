@@ -10,18 +10,17 @@ function App() {
     <>
       <Grid container>
         <Grid
-          size={{ xs: 12, md:1.5, xl:3}}
-          sx={{ p: "1rem", overflow: "hidden" }}
+          size={{ xs: 12, md:2.5, xl:4}}
         >
           {/* Navbar */}
           <Navbar />
         </Grid>
         <Grid
-          size={{ xs: 12, md:8.5, xl:9}}
-          sx={{ p: "1rem", overflow: "hidden" }}
+          size={{ xs: 12, md:8.5, xl:7}}
+          sx={{overflow: "hidden"}}
         >
           {/* content */}
-          <Box sx={{ width: "98%", maxWidth: "1100px", margin: "0 auto" }}>
+          <Box sx={{ width: "100%", maxWidth: "1100px", margin: "1rem auto" }}>
             {router}
             <Footer />
           </Box>

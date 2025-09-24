@@ -16,7 +16,8 @@ function Hero() {
           flexWrap:"wrap",
           alignItems:'center',
           justifyContent:'center',
-          gap:"1.2rem"
+          gap:"1.2rem",
+          width:"100%"
         }}
       >
         <HeroHeader/>

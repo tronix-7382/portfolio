@@ -25,10 +25,11 @@ function ProjectCard({ title, caption, year, url, fw, button, hoverUrl }) {
           border: "1px solid rgba(0,160,250,0.1)",
           backgroundColor: "primary.dark",
           padding: !fw ? ".5rem" : ".2rem",
-          maxWidth: { xs: "350px", md: "390px", xl: "510px" },
+          maxWidth: { xs: "350px", md: "390px", xl: "450px" },
           transition: "all .5s",
           position: "relative",
           width: "100%",
+          
 
           "&:hover": {
             border: "1px solid rgba(0,160,250,0.3)",

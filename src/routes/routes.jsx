@@ -4,6 +4,7 @@ import Contact from "../pages/Contact";
 import Gallery from "../pages/Gallery";
 import Project from "../pages/Project";
 import Projects from "../pages/Projects";
+import Resume from "../pages/Resume";
 
 
 // HomePage is About Component
@@ -15,6 +16,7 @@ const routes = () => [
     {path:'/gallery', element: <Gallery/>},
     {path:'/contact', element: <Contact/>},
     {path:'/certifications', element: <Certifications/>},
+    {path:'/resume', element: <Resume/>},
     {path:'*', element: <p>404 Not Found</p>}
 ]
 
