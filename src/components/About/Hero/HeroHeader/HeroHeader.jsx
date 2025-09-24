@@ -48,7 +48,6 @@ const HeroHeader = () => {
           text={"Resume"}
           icon={<DocumentScannerOutlinedIcon sx={{ fontSize: "1.2rem" }} />}
           href={"/resume"}
-          blank={true}
         />
 
         <HeroHeaderCard

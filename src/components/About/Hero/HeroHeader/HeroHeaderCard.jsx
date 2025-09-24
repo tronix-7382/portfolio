@@ -1,12 +1,11 @@
 import { Box, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
 
-function HeroHeaderCard({ icon, text, blank, href }) {
+function HeroHeaderCard({ icon, text, href }) {
   return (
     <>
       <Link
         to={href || ""}
-        target={blank && "_blank"}
         style={{ flexGrow: 1, width: "100%", maxWidth: "300px"}}
       >
         <Box
